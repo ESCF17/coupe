@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="beginner_tutorials" type="test_listener_coord.py" name="test_listener_coord"/>
+  <node pkg="rosserial_python" type="serial_node.py" name="arduino">
+	<param name="port" value="/dev/ttyUSB0"/>
+	<param name="baud" value="9600"/>
+  </node>	
+</launch>
