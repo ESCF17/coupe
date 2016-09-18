@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <meta charset="utf-8" />
+        <title>Interface Robot</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    </head>
+    <body onload="legendeBegin();">
+
+        <div id="contain">
+        <h1 style="line-height: 50%"> Position Robot</h1>
+        <div style="background-color: white; height: 2px;"> </div>
+        <h3 style="line-height: 50%;"> #ESILV_CFR_2017 </h3>
+        	<canvas onclick="draw(event)" id="canvas_table" width="600" height="400" style="border : 4px solid black;float:left;"></canvas>
+            <div id="log" style="padding-top : 10px;line-height: 50%; margin-left : 10px; height: 390px; border: 4px solid black; overflow: scroll;background-color: black"></div>
+        </div>
+        <div id="panel" style="text-align: center;line-height: 50%;">
+            <h1> PANEL </h1>
+            <div style="background-color: white; height: 2px;"> </div>
+            <br>
+         
+            <button style="border: 3px solid black;background-color: #33CC00" onclick="departVert()">DEPART VERT</button>
+            <button style="border: 3px solid black;background-color: #9933ff" onclick="departViolet()">DEPART VIOLET</button>
+            <button style="border: 3px solid black;background-color: #000022" onclick="clearCanvas()">CLEAR canvas</button>
+            <br>
+            <button style="border: 3px solid black;background-color: #34C6F7" onclick="lancerRequete()">LANCER requetes</button>
+            <button style="border: 3px solid black;background-color: #CC3300" onclick="stopRequete()">STOPPER requetes</button>
+            <button style="border: 3px solid black;background-color: #000022" onclick='document.getElementById("log").innerHTML = "";'>VIDER console</button><br>
+            <button id ="clickScroll" style="border: 3px solid black;" onclick="clickScrollAuto()">SCROLL MANU</button>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="js/tableJavaScript.js">
+    </script>
+     <script type="text/javascript" src="js/jquery.js">
+    </script>
+</html>
