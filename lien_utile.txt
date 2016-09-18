@@ -1,0 +1,19 @@
+Vous trouverez ci-joints l'ensembles des liens utiles dans ce projet : 
+
+-- Linux :
+http://linux.developpez.com/tutoriels/debuter-installation/guide-linux-distribution/
+(Installation non obligatoire, mais notions à connaitre)
+
+-- ROS : 
+http://www.ros.org
+http://wiki.ros.org/fr 
+https://cse.sc.edu/~jokane/agitr/agitr-letter.pdf (livre pdf)
+
+-- GIT : 
+https://github.com
+https://openclassrooms.com/courses/gerez-vos-codes-source-avec-git (tuto console !!)
+
+-- Latex : 
+https://openclassrooms.com/courses/redigez-des-documents-de-qualite-avec-latex (tuto)
+
+
