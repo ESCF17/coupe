@@ -1,0 +1,45 @@
+
+1) A lire avant la réunion
+
+ROS quel interêt : 
+=> Ros permet de faire du vrai multitâche
+=> Ros permet de faire le lien entre les différens capteurs/Arduino
+=> Ros s'implémente sur un noyau llinux (possibilité de mettre sur une raspberry, puissance de calcul > arduino)
+
+
+Explication du fonctionnement de ROS : 
+Pour comprendre le fonctionnement de ROS, il faut connaître quelques notions très importantes : 
+	noeud : (node) correspond à un programme, une arduino
+	topic : lieu d'échange entre les noeuds, il est possible qu'un noeud soit lier à plusieurs topic, dans ce topic généralement des noeuds sont publisher (ils vont alors publier des données) tant dis que d'autres sont subscriber leur rôle est de récupérer cette donnée et de la traiter.
+	WS : le working space est le dossier parent de ROS 
+
+
+
+
+
+2) Partie expliquée pendant la réunion :
+
+Nous partirons du principe que ROS est dèjà installer.
+
+# Dans cette partie nous allons voir ensemble comment créer un package et insérer dans ce package des scripts en python.
+	- se placer dans le working space
+	- puis dans le dossier "src"
+	(Il est possible de faire les 2 étaps en une ligne cd ~/catkin_ws/src)
+	- Une fois dans le dossier éxecuter la commande suivante : 
+                                   catkin_create_pkg nom_du_package std_msgs rospy roscpp
+	(std_msgs rospy et roscpp sont d'autres packages, nom_du_package sera dépendent de std_msgs rospy et roscpp en gros c'est pour utiliser les packages dans nos noeuds)
+	- La création est bientôt finit, il faut maintenant compiler (estimé vous heureux en python il y a très peu de compilation alos qu'en c++ ... une horreur)
+	- Pour faire cette compilation aller dans le WS et faite un catkin_make
+
+Peur d'avoir merdé ? va dans ton package (~/catkin_ws/src/nom_du_package)
+Si tu vois dedans des dossiers (src,build ...) tu as réussi !!!
+Je te rassure en python src, build n'ont pas grande utilité
+
+## Le Hello World de ROS
+
+
+
+
+
+
+
