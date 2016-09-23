@@ -1,0 +1,14 @@
+#########################################
+##### Listes des tutos à faire : ######## 
+#########################################
+
+
+TP1 : 
+- explication de ROS avec un exemple simple
+- creation d'un package
+- pusblisher et listener 
+
+TP2 : 
+- ROS + Arduino 
+- Appuie sur un bouton, afficer sur la console je suis allume ou eteind  
+
