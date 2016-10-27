@@ -1,0 +1,28 @@
+digraph G {
+  
+    label ="CFR";
+   
+    t0		   [label = <T0 <br/> <I>Début du projet </I>>]    
+    table_0   	   [label = "Table  ( )"]
+    struct_robot   [label = <Reflection <br/> Structure Robot ( )>]
+    struct_robot_1 [label = <Conception  <br/> Structure Robot 1 ( )>]
+    struct_robot_2 [label = <Conception  <br/> Structure Robot 2 ( )>]
+    imp_struct 	   [label = "Impression Structures ()"]
+    prepa_os	   [label = "Préparatiion Raspberry"]
+    prepa_video    [label = "Video" ]
+    
+    t0[shape=box];
+       
+    t0 -> table_0;
+    t0 -> struct_robot;
+    t0 -> prepa_os;
+    t0 -> prepa_video;
+
+
+    struct_robot -> struct_robot_1;
+    struct_robot -> struct_robot_2;
+
+    struct_robot_1 -> imp_struct;
+    struct_robot_2 -> imp_struct;
+    
+}

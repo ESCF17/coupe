@@ -1,0 +1,200 @@
+digraph G {
+  
+    node [shape=none, width=3,height=.1 , style="filled,rounded"];
+    compound=true;
+    nodesep=.2;
+    rankdir=LR; 
+    edge[minlen = 2];
+    label ="UFR mathématiques, informatique, technologies, sciences de l'information et de la communication (MITSIC)";
+    splines=ortho;
+
+    subgraph cluster_0 {
+        label="Direction";
+        aa,am,fv;
+    }
+    
+    subgraph cluster_1 {
+        label="Pôle Secrétariat";
+        llm, vee, amf, cm, bs, ajm;
+    }
+    
+    subgraph cluster_2 {
+        label="Pôle Techniciens";
+        gi,tm,ca,dh,bss,ead;
+    }
+    
+    subgraph cluster_3 {
+        label="Pôle Enseignants";
+        ens;
+    } 
+    
+    
+    ens [label = "Enseignants Cherchers"]
+    
+    aa [label = <ALI CHERIF Arab <br/> <I>Directeur</I>>]
+    /*
+    Directeur
+    Bureau : A 182
+    Téléphone Tel: 6416
+    Téléphone Fax: 6783
+    Email E-mail: aa@ai.univ-paris8.fr */
+    
+    am [label = "AMARA Mourad"]
+    /*
+    Responsable administratif et financier
+    Bureau : A 146
+    Téléphone Tel: 6426
+    Téléphone Fax: 6783
+    Email E-mail: mourad.amara03@univ-paris8.fr */
+    
+    fv [label = "FRANCISCO Veronique"]
+    /*
+    Adjointe au responsable administratif et financier
+    Bureau : A 146
+    Téléphone Tel: 6427
+    Téléphone Fax: 6783
+    Email E-mail: veronique.francisco@univ-paris8.fr */
+    
+    
+    dh [label = "DJERROUD Halim"]
+    /*
+    Responsable du pôle informatique
+    Bureau : A 173
+    Téléphone Tel: 6411
+    Téléphone Fax: 6783
+    Email E-mail: hdd@ai.univ-paris8.fr */
+    
+   
+    
+    
+    gi [label = "GANCHEV Ivaylo"]
+    /*
+    Informatique
+    Centre de calcul
+    Bureau : A 166 / 187 / 192
+    Téléphone Tel: 6408
+    Téléphone Tel: 6409
+    Téléphone Fax: 6783
+    Email E-mail: ivaylo.ganchev@univ-paris8.fr */
+    
+    
+    tm [label = "TOUNSI Mehdi"]
+    /*
+    Informatique
+    Centre de calcul
+    Bureau : A 166 / 187 / 192
+    Téléphone Tel: 6408
+    Téléphone Tel: 6409
+    Téléphone Fax: 6783
+    Email E-mail: mehdi.tounsi02@univ-paris8.fr */
+    
+    
+    llm [label = "LE LEZ Martine"]
+    /*
+    Informatique
+    Secrétariat pédagogigue L1 et L2 informatique
+    Bureau : A 150
+    Téléphone Tel: 6535
+    Téléphone Fax: 6783
+    Email E-mail: martine.le-lez@niv-paris8.fr*/
+    
+    
+    vee [label = "VIATOR Erica"]
+    /*
+    Mathématiques
+    Secrétariat pédagogigue Département Mathématiques
+    Bureau : A 149
+    Téléphone Tel: 6420
+    Téléphone Fax: 6783
+    Email E-mail: erica.viator02@univ-paris8.fr */
+    
+    
+    amf [label = "AMNOUCHE MORELLI Fatima"]
+    /*
+    Informatique
+    Secrétariat pédagogique du master Big Data et Conduite de projets informatiques
+    Bureau : A 183
+    Téléphone Tel: 6400
+    Téléphone Fax: 6783
+    Email E-mail: fatima.amnouche@univ-paris8.fr */
+    
+    
+    bss [label = "BAKIR Salah"]
+    /*
+    Laboratoire d'informatique avancée de Saint-Denis (LIASD)
+    Centre de calcul
+    Bureau : A165
+    Téléphone Tel: 7353
+    Téléphone Fax: 6783
+    Email E-mail: bakir.salah@univ-paris8.fr */
+    
+    
+    
+    ead [label = "EL AISSI David"]
+    /*
+    Micro-informatique et machines embarquées (MIME)
+    Centre de calcul
+    Bureau : A 173
+    Téléphone Tel: 6689
+    Téléphone Fax: 6783
+    Email E-mail: ead@mime.univ-paris8.fr */
+    
+    
+    cm [label = "CHAILLOUX Marie"]
+    /*
+    Micro-informatique et machines embarquées (MIME)
+    Secrétariat pédagogigue Micro-informatique et machines embarquées
+    Bureau : A 181
+    Téléphone Tel: 6415
+    Téléphone Fax: 6783
+    Email E-mail: marie.chailloux@univ-paris8.fr */
+    
+    
+    
+    ca [label = "CHOPPY Alexis"]
+    /*
+    Hypermédia
+    Centre de Calcul
+    Bureau : A 173
+    Téléphone Tel: 6413
+    Téléphone Fax: 6783
+    Email E-mail: alexis.choppy@univ-paris8.fr */
+    
+    
+    bs [label = "BELLOS Stavroula"]
+    /*
+    Hypermédia
+    Secrétariat pédagogigue hypermédia
+    Bureau : A 168
+    Téléphone Tel: 6758
+    Téléphone Fax: 6783
+    Email E-mail: stavroula.bellos@univ-paris8.fr */
+  
+    
+    
+    ajm [label = "ANJOURE Jean-Michel"]
+    /*
+    Sciences de l'information et de la documentation
+    Secrétariat pédagogigue sciences de l'Information et de la documentation
+    Bureau : A 170
+    Téléphone Tel: 6417
+    Téléphone Fax: 6783
+    Email E-mail: jean-michel.anjoure@univ-paris8.fr */
+
+    concentrate=true;
+    node [shape=point,style=invis,width=0.1];
+    
+
+    e2 -> ca [lhead=cluster_2,dir=none]; 
+    am -> e2 [ltail=cluster_0,dir=none];
+    e2 -> cm [lhead=cluster_1,dir=none];
+    e2 -> ens[lhead=cluster_3,dir=none];
+
+/*
+    am->ca  [ltail=cluster_0,lhead=cluster_2];
+    am->cm  [ltail=cluster_0,lhead=cluster_1];
+    am->ens [ltail=cluster_0,lhead=cluster_3];
+ */   
+
+    
+}
