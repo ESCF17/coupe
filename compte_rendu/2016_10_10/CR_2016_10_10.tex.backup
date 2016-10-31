@@ -1,0 +1,73 @@
+\documentclass[12pt]{report}
+
+\usepackage[utf8]{inputenc}   
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{color}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage { boxedminipage }
+
+
+\begin{document}
+\begin{minipage}{0.55\linewidth}
+\noindent Assocation : DaVinciBot\\
+Ecole : ESILV - Léonard de vinci\\
+Siège :  12 Avenue Léonard de Vinci, 92400 Courbevoie\\
+Equipe Projet ESILV : CFR 2017\\
+\end{minipage}\hfill
+\begin{minipage}{0.3\linewidth}
+\includegraphics[scale = 0.2]{img/logo_assos.png}
+\end{minipage}
+\vspace{1cm}
+% PAS TOUCHER AU DESSUS !!! 
+
+
+% modifier numéro compte rendu et numéro de semaine
+
+\begin{center}
+\begin {boxedminipage} [ poslb ] { 5cm}
+\textbf{Compte Rendu n01}\\
+\textbf{Date 10 septemebre 2016}
+\end {boxedminipage}
+\end{center}
+\textbf{Chargé du CR : Hugo Pousseur}
+
+\vspace{1cm}
+
+\paragraph{Etaient présent à la réunion :}
+\begin{itemize}
+\item Halim DJERROUD - Mentor
+\item Hugo POUSSEUR - chef de projet
+\item ...
+\end{itemize}
+
+
+\paragraph{Ordre du jour :}
+\begin{enumerate}
+ \item Explication de la CFR 
+ \item Choix de la méthode, SCRUMP Implique une dévision du projet en petit projet, en sprint et *zone de crise*.
+ \item Explication du système de repérage.(But principale de cette année)
+ \item Discussions sur des balises (Avec M Peretti)
+ \item Discussions sur la différene entre signal sinusoidale et carré (Avec M Peretti)
+\end{enumerate}
+
+
+\paragraph{Décisions prises :}
+\begin{enumerate}
+ \item Taches définies
+ \item Insallation de Kinetic (ROS)
+ \item Etablir le planning le diagramme Pert
+ \item Création d'un IRC (freenode) CFR\_ESILV
+ \item Tous nos documents en LATEX
+ \item Documentation à la fin d'une tâche en LATEX
+\end{enumerate}
+
+
+\paragraph{Ordre du jour de la prochaine réunion :}
+
+
+
+
+\end{document}

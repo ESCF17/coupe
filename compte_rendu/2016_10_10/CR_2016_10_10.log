@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.18)  10 OCT 2016 16:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.18)  31 OCT 2016 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**squelette_compte_rendu.tex
-(./squelette_compte_rendu.tex
+**CR_2016_10_10.tex
+(./CR_2016_10_10.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -529,8 +529,8 @@ Package graphics Info: Driver file: pdftex.def on input line 95.
 \Gin@req@width=\dimen118
 )
 (/usr/share/texlive/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty)
-(./squelette_compte_rendu.aux)
-\openout1 = `squelette_compte_rendu.aux'.
+(./CR_2016_10_10.aux)
+\openout1 = `CR_2016_10_10.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -609,9 +609,9 @@ LaTeX Info: Redefining \ref on input line 13.
 LaTeX Info: Redefining \pageref on input line 13.
 LaTeX Info: Redefining \nameref on input line 13.
 
-(./squelette_compte_rendu.out) (./squelette_compte_rendu.out)
+(./CR_2016_10_10.out) (./CR_2016_10_10.out)
 \@outlinefile=\write3
-\openout3 = `squelette_compte_rendu.out'.
+\openout3 = `CR_2016_10_10.out'.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -644,42 +644,40 @@ File: img/logo_assos.png Graphic file (type png)
  <use img/logo_assos.png>
 Package pdftex.def Info: img/logo_assos.png used on input line 21.
 (pdftex.def)             Requested size: 130.88667pt x 45.56944pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 41.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/logo_assos.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
-
-(./squelette_compte_rendu.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
-Package rerunfilecheck Info: File `squelette_compte_rendu.out' has not changed.
-
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
+ (./CR_2016_10_10.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
+Package rerunfilecheck Info: File `CR_2016_10_10.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  ) 
 Here is how much of TeX's memory you used:
- 6112 strings out of 494953
- 87847 string characters out of 6180977
- 170609 words of memory out of 5000000
+ 6127 strings out of 494953
+ 87826 string characters out of 6180977
+ 173573 words of memory out of 5000000
  9331 multiletter control sequences out of 15000+600000
  7916 words of font info for 25 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,7n,23p,231b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,7n,23p,222b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/hugo/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/hu
 go/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on squelette_compte_rendu.pdf (1 page, 37367 bytes).
+Output written on CR_2016_10_10.pdf (1 page, 46227 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

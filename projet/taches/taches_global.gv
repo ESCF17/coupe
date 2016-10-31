@@ -5,18 +5,19 @@ digraph G {
     t0		   [label = <T0 <br/> <I>Début du projet </I>>]    
     table_0   	   [label = <Table <br/> Achat matériaux ( )>]
     table_1   	   [label = <Table <br/> Mise en place  ( )>]
-    struct_robot   [label = <CDC et Reflexion <br/> Structure Robot ( ) <br/> DL 07/11/2016>]
-    struct_robot_1 [label = <Conception  <br/> Structure Robot 1 ( )>]
-    struct_robot_2 [label = <Conception  <br/> Structure Robot 2 ( )>]
+    struct_robot   [label = <CDC et Reflexion <br/> Structure Robot (Pierre/Pousseur) <br/> DL 07/11/2016>]
+    struct_robot_1 [label = <Conception <br/> Structure Robot 1 ()>]
+    struct_robot_2 [label = <Conception <br/> Structure Robot 2 ()>]
     imp_struct 	   [label = "Impression Structures ()"]
     prepa_os	   [label = <Préparation Raspberry <br/> (Pousseur) > style="filled"]
-    prepa_video    [label = <Vidéo <br/>DL (PIX2 - 5j)>]
-    cch_sys_rep    [label = <Cahier des charges <br/> Systeme repérage ( ) <br/> DL 07/11/2016 >]
-    cons_sys_rep   [label = <Conceprion Systeme <br/> repérage ( )>]
+    prepa_video    [label = <Vidéo <br/>DL (27/11/2016 - 5j) <br/>Nicolas (materiel) <br/>Guillaume fradet (montage)<br/>Brice(script)<br/>théo>]
+    cch_sys_rep    [label = <Cahier des charges <br/> Systeme repérage (Brice/Florian/Halim) <br/> DL 14/11/2016 >]
+    cons_sys_rep   [label = <Conception Systeme <br/> repérage ( )>]
     rep_emetteur   [label = <Emetteur ( )>]
     rep_recepteur  [label = <Recepteur ( )>]
+    strats         [label = <Etudie de la stratégie - structure robot <br/> Medhi/Sofiance/hyppolite<br/>DL 07/11/2016>]
 
-    sponsors	   [label = <Sponsors () <br/> DL 14/11/2016 >]
+    sponsors	   [label = <Sponsors (Rabah/Pierre) <br/> DL 14/11/2016 >]
     
     moteur_roues   [label = <Mise en place <br/> des Moteurs ()>] 
     arduino_moteur [label = <Code Arduino <br/> Moteurs ()>] 
@@ -31,7 +32,9 @@ digraph G {
     t0[shape=box];
        
     t0		-> inventaire;
-    inventaire -> table_0 	-> table_1;
+    inventaire -> table_0 -> table_1;
+ 
+    t0 -> strats
 
     t0 -> prepa_os;
     
@@ -52,7 +55,7 @@ digraph G {
     imp_struct	   -> cons_etg1_r1;
     imp_struct	   -> cons_etg1_r2;
 
-    t0 		   -> cch_sys_rep;
+    t0    -> cch_sys_rep;
     cch_sys_rep	   -> cons_sys_rep;
     cons_sys_rep   -> rep_emetteur;
     cons_sys_rep   -> rep_recepteur;
