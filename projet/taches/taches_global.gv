@@ -10,14 +10,14 @@ digraph G {
     struct_robot_2 [label = <Conception <br/> Structure Robot 2 ()>]
     imp_struct 	   [label = "Impression Structures ()"]
     prepa_os	   [label = <Préparation Raspberry <br/> (Pousseur) > style="filled"]
-    prepa_video    [label = <Vidéo <br/>DL (27/11/2016 - 5j) <br/>Nicolas (materiel) <br/>Guillaume fradet (montage)<br/>Brice(script)<br/>théo>]
-    cch_sys_rep    [label = <Cahier des charges <br/> Systeme repérage (Brice/Florian/Halim) <br/> DL 14/11/2016 >]
+    prepa_video    [label = <Vidéo <br/>Nicolas/Guillaume/Brice/théo<br/>+ éventuellement des figurants en plus<br/>DL 27/11/2016 - 5J>]
+    cch_sys_rep    [label = <Cahier des charges <br/> Systeme repérage <br/>Brice/Florian/Halim<br/> DL 14/11/2016 >]
     cons_sys_rep   [label = <Conception Systeme <br/> repérage ( )>]
     rep_emetteur   [label = <Emetteur ( )>]
     rep_recepteur  [label = <Recepteur ( )>]
-    strats         [label = <Etudie de la stratégie - structure robot <br/> Medhi/Sofiance/hyppolite<br/>DL 07/11/2016>]
+    strats         [label = <Etudie de la stratégie - structure robot <br/> Medhi/Sofiance/hippolyte<br/>DL 07/11/2016>]
 
-    sponsors	   [label = <Sponsors (Rabah/Pierre) <br/> DL 14/11/2016 >]
+    sponsors	   [label = <Sponsors <br/>Rabah/Pierre<br/> DL 14/11/2016 >]
     
     moteur_roues   [label = <Mise en place <br/> des Moteurs ()>] 
     arduino_moteur [label = <Code Arduino <br/> Moteurs ()>] 
