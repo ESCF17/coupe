@@ -1,0 +1,57 @@
+Dimensions Meccano : 
+
+
+#### simple_L1440mm ##### 
+Longueur : 144mm
+base : 7.5 * 8.0 mm² - 1.0 * 4.0 mm² 
+Trou : D = 5 mm  
+Ecart : 16mm
+Nombre : 1
+
+
+#### simple_L160mm ##### 
+Longueur : 160mm
+base : 7.5 * 8.0 mm² - 1.0 * 4.0 mm² 
+Trou : D = 5 mm  
+Ecart : 16mm
+Nombre : 2
+
+
+#### simple_L192mm ##### 
+Longueur : 192mm
+base : 7.5 * 8.0 mm² - 1.0 * 4.0 mm² 
+Trou : D = 5 mm  
+Ecart : 16mm
+Nombre : 4
+
+--------------------------------------
+#### double_L96mm ####
+Longueur : 96 mm
+base : 24.0 * 7.5 mm² - 1.0 * 4.0 mm² 
+Trou : D = 5 mm  
+Ecart : 16mm
+Nombre : 2
+
+
+#### double_L128mm ####
+Longueur : 128 mm
+base : 24.0 * 7.5 mm² - 1.0 * 4.0 mm² 
+Trou : D = 5 mm  
+Ecart : 16mm
+Nombre : 2
+
+
+#### double_L144mm ####
+Longueur : 144 mm
+base : 24.0 * 7.5 mm² - 1.0 * 4.0 mm² 
+Trou : D = 5 mm  
+Ecart : 16mm
+Nombre : 2
+
+
+#### double_L160mm ####
+Longueur : 160 mm
+base : 24.0 * 7.5 mm² - 1.0 * 4.0 mm² 
+Trou : D = 5 mm  
+Ecart : 16mm
+Nombre : 2
