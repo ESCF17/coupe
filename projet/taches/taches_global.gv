@@ -6,16 +6,17 @@ digraph G {
     table_0   	   [label = <Table <br/> Achat matériaux ( )>]
     table_1   	   [label = <Table <br/> Mise en place  ( )>]
     struct_robot   [label = <CDC et Reflexion <br/> Structure Robot (Pierre/Pousseur) <br/> DL 07/11/2016>]
-    struct_robot_1 [label = <Conception <br/> Structure Robot 1 ()>]
-    struct_robot_2 [label = <Conception <br/> Structure Robot 2 ()>]
-    imp_struct 	   [label = "Impression Structures ()"]
+    struct_robot_1 [label = <Conception <br/> Structure Robot 1 <br/>Hippolyte/Hugo Pierre/Nicolas/Theo>]
+    struct_robot_2 [label = <Conception <br/> Structure Robot 2 <br/>Guillaume/Rabah/Sofiane>]
+    imp_struct 	   [label = <Impression Structures ()>]
     prepa_os	   [label = <Préparation Raspberry <br/> (Pousseur) > style="filled"]
     prepa_video    [label = <Vidéo <br/>Nicolas/Guillaume/Brice/théo<br/>+ éventuellement des figurants en plus<br/>DL 27/11/2016 - 5J>]
     cch_sys_rep    [label = <Cahier des charges <br/> Systeme repérage <br/>Brice/Florian/Halim<br/> DL 14/11/2016 >]
-    cons_sys_rep   [label = <Conception Systeme <br/> repérage ( )>]
-    rep_emetteur   [label = <Emetteur ( )>]
-    rep_recepteur  [label = <Recepteur ( )>]
+    cons_sys_rep   [label = <Conception Systeme <br/> repérage <br/>Brice/Florian/Halim/Hugo Pousseur>]
+    rep_emetteur   [label = <Emetteur ()>]
+    rep_recepteur  [label = <Recepteur ()>]
     strats         [label = <Etudie de la stratégie - structure robot <br/> Medhi/Sofiance/hippolyte<br/>DL 07/11/2016>]
+    solution_technique [label = <Réfléchir à des solutions techniques <br/>Adrien/Medhi/Hugo Pousseur>]    
 
     sponsors	   [label = <Sponsors <br/>Rabah/Pierre<br/> DL 14/11/2016 >]
     
@@ -35,7 +36,7 @@ digraph G {
     inventaire -> table_0 -> table_1;
  
     t0 -> strats
-
+    strats -> solution_technique;		
     t0 -> prepa_os;
     
     t0 -> prepa_video;
