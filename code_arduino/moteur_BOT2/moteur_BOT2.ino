@@ -5,9 +5,11 @@
 #include <ros.h>
 #include <std_msgs/String.h>
 
+int vitesse = 120;
 
 
-void moteur1(int param,int vitesse){    //Gauche
+
+void moteur1(int param){    //Gauche
   if (param == STOP){
     digitalWrite(9,LOW);    digitalWrite(10,LOW);    analogWrite(3,0);
   }
@@ -23,7 +25,7 @@ void moteur1(int param,int vitesse){    //Gauche
   }
 }
 
-void moteur2(int param, int vitesse){   //Droit
+void moteur2(int param){   //Droit
   if (param == STOP){
     digitalWrite(2,LOW);    digitalWrite(6,LOW);    analogWrite(5,0);
   }
@@ -42,11 +44,13 @@ void moteur2(int param, int vitesse){   //Droit
 
 void motor_control( const std_msgs::String& ard_cmd){
   Serial.print(ard_cmd.data);
-  if(ard_cmd.data[0] == 'q'){ moteur1(AV,150);    moteur2(AV,150);    }
-  if(ard_cmd.data[0] == 'd'){ moteur1(AR,150);    moteur2(AR,150);    }
-  if(ard_cmd.data[0] == 's'){ moteur1(AV,150);    moteur2(AR,150);    }
-  if(ard_cmd.data[0] == 'z'){ moteur1(AR,150);    moteur2(AV,150);    }
-  if(ard_cmd.data[0] == 'a'){ moteur1(STOP,0);    moteur2(STOP,0);    }
+  if(ard_cmd.data[0] == 'q'){ moteur1(AV);    moteur2(AV);    }
+  if(ard_cmd.data[0] == 'd'){ moteur1(AR);    moteur2(AR);    }
+  if(ard_cmd.data[0] == 's'){ moteur1(AV);    moteur2(AR);    }
+  if(ard_cmd.data[0] == 'z'){ moteur1(AR);    moteur2(AV);    }
+  if(ard_cmd.data[0] == 'a'){ moteur1(STOP);    moteur2(STOP);}
+  if(ard_cmd.data[0] == 'p' && vitesse < 190){vitesse += 10;}
+  if(ard_cmd.data[0] == 'm' && vitesse > 110){vitesse -= 10;}
 }
 
 ros::NodeHandle  nh;

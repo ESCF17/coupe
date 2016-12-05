@@ -19,7 +19,7 @@ double refZ = -1;
 
 // définition d'un tableau de données
 uint8_t data[6];
-String lastResult = "";
+char lastResult = ' ';
 ros::NodeHandle nh;
 std_msgs::String test;
 ros::Publisher p("cmd_key_arduino", &test);
@@ -99,16 +99,20 @@ if(refX - accelX > 100){
 
 //String chaine = String(refX-accelX)+"%"+String(refY-accelY)+"%"+String(refZ-accelZ);
 //Serial.println(chaine);
-if(!lastResult.equals(result)){
+if(lastResult != result){
   lastResult = result;
   test.data = &result;
   p.publish(&test);
-  nh.spinOnce();
 }
+
+nh.spinOnce();
+
+
+ 
 
 // on écrit sur le servomoteur la valeur
 
 // un petit delai pour pas saturer le servomoteur
-delay(100);
+delay(50);
 
 }
