@@ -1,63 +1,124 @@
 digraph G {
   
     label ="CFR - Phase I";
-   
-    t0		   [label = <T0 <br/> <I>Début du projet </I>>]    
-    table_0   	   [label = <Table <br/> Achat matériaux ( )>]
-    table_1   	   [label = <Table <br/> Mise en place  ( )>]
+	fontsize = 16;
+    //t0		   [label = <T0 = <I>Début du projet </I>>,fontsize=24]    
+    table_0   	   [label = <Table <br/> Achat matériaux ()>]
+    table_1   	   [label = <Table <br/> Mise en place  ()>,style="filled",shape=box]
     struct_robot   [label = <CDC et Reflexion <br/> Structure Robot (Pierre/Pousseur) <br/> DL 07/11/2016>]
     struct_robot_1 [label = <Conception <br/> Structure Robot 1 <br/>Hippolyte/Hugo Pierre/Nicolas/Theo <br/>DL 28/11/2016>]
     struct_robot_2 [label = <Conception <br/> Structure Robot 2 <br/>Guillaume/Rabah/Sofiane<br/>DL 28/11/2016>]
     imp_struct 	   [label = <Impression Structures ()>]
-    prepa_os	   [label = <Préparation Raspberry <br/> (Pousseur) > style="filled"]
+    prepa_os	   [label = <Préparation Raspberry <br/> (Pousseur) > style="filled",shape=box]
     prepa_video    [label = <Vidéo <br/>Nicolas/Guillaume/Brice/théo<br/>+ éventuellement des figurants en plus<br/>DL 27/11/2016 - 5J>]
+    publication_video [label = <Publier la vidéo sur Youtube et Moodle<br/>Gauillaume Fradet>,style="filled",shape=box]
     cch_sys_rep    [label = <Cahier des charges <br/> Systeme repérage <br/>Brice/Florian/Halim<br/> DL 14/11/2016 >]
-    cons_sys_rep   [label = <Conception Systeme <br/> repérage <br/>Brice/Florian/Halim/Hugo Pousseur DL : non défini>]
+    cons_sys_rep   [label = <Conception Systeme <br/> repérage <br/>Brice/Florian/Halim/Hugo Pousseur <br/>DL : non défini>]
     rep_emetteur   [label = <Emetteur ()>]
     rep_recepteur  [label = <Recepteur ()>]
-    strats         [label = <Etudie de la stratégie - structure robot <br/> Medhi/Sofiance/hippolyte<br/>DL 07/11/2016>]
+    rep_test 	   [label = <Réaliser les testes pour fixer les valeurs des résistances ()>]
+	rep_robot      [label = <Ajouter le systeme de repérage sur les robots()>]		
+	rep_batterie   [label = <Réflechir à comment aliment le robot<br/>Particulièrement le système de réprage>]
+	
+	strats         [label = <Etude de la stratégie - structure robot <br/> Medhi/Sofiane/hippolyte<br/>DL 07/11/2016>]
     solution_technique [label = <Réfléchir à des solutions techniques <br/>Adrien/Medhi/Hugo Pousseur <br/>DL 28/11/2016>]    
 
     sponsors	   [label = <Sponsors <br/>Rabah/Pierre<br/> DL 14/11/2016 >]
-    
+    sponsors_2 [label = <Faire une deuxième vague de sponsors>]
+   
+    pull  [label=<Créer le prototype des pulls<br/>Faire la liste des surnonms<br/>Faire la cagnotte>]
+    commander_pull [label=<Commader les pulls>,style="filled",shape=box];
+	
     moteur_roues   [label = <Mise en place <br/> des Moteurs ()>] 
     arduino_moteur [label = <Code Arduino <br/> Moteurs ()>] 
     arduino_rasp   [label = <Connection ROS <br/> des Moteurs ()>] 
 
     cons_etg1_r1   [label = <Conception Etage <br/> Robot 1  ()>] 
     cons_etg1_r2   [label = <Conception Etage <br/> Robot 2  ()>]
-
+	cons_mat 	   [label = <Construction du mat qui soutient les balises>]
+	
     inventaire	   [label = <Inventaire matériel <br/> DL 31/10/2016 (all)>]
+	modification [label=<<I>Dernière modification 28/11/2016</I>>,shape=box];
+	graph_ros [label=<Faire le graphe pour ROS comprennant :<br/>Nodes<br/>Topics>];
+	
+	modification -> prepa_video [style=dashed, color=red,ltail=cluster_pres,lhead=cluster_aux];
+    modification -> inventaire [style=dashed, color=red];
+	modification -> pull [style=dashed, color=red];
+	modification -> sponsors [style=dashed, color=red];
+    modification -> prepa_os [style=dashed, color=red];
+    modification -> struct_robot [style=dashed, color=red];
+	modification -> cch_sys_rep [style=dashed, color=red];
+	modification -> strats [style=dashed, color=red];
+	
+	
+	subgraph cluster_pres{
+		label = <t0 = <I>Début du projet </I>>
+		fontsize=24;
+		modification;
+	}
+   
+	
+	
+	subgraph cluster_aux{
+		color = blue;
+		fontcolor = blue;
+		style = bold;
+		label = "Partie documents";
+		fontsize = 22;
+		prepa_video -> publication_video;				    
+		pull->commander_pull;
+		inventaire -> table_0 -> table_1;	
+		sponsors -> sponsors_2;
+	}
+	
+	subgraph cluster_technique{
+		color = orange;
+		fontcolor = orange;
+		label = "Partie techniques";
+		fontsize = 22;
+		style=bold;
+		prepa_os;
+		struct_robot -> struct_robot_1;
+		struct_robot -> struct_robot_2;
 
+		struct_robot_1 -> imp_struct;
+		struct_robot_2 -> imp_struct;
+		
 
-    t0[shape=box];
-       
-    t0		-> inventaire;
-    inventaire -> table_0 -> table_1;
- 
-    t0 -> strats
-    strats -> solution_technique;		
-    t0 -> prepa_os;
+		
+		cch_sys_rep	   -> cons_sys_rep;
+		cons_sys_rep   -> rep_emetteur;
+		cons_sys_rep   -> rep_recepteur;
+		rep_emetteur -> rep_test;
+		rep_recepteur -> rep_test;
+		rep_test ->rep_batterie
+		rep_batterie->rep_robot [style=dashed];
+			
+
+		subgraph cluster_robot{
+			label = <Naissance d'un robot>;
+			color = red;
+			fontcolor = red;
+			style = bold;
+			
+			imp_struct	   -> moteur_roues;
+			imp_struct	 -> cons_etg1_r2 ;
+		    imp_struct	 -> cons_etg1_r1 ;
+			
+			moteur_roues   -> arduino_moteur;
+			arduino_moteur -> arduino_rasp;
+			
+			
+			cons_etg1_r1 -> cons_mat;
+			cons_etg1_r2 -> cons_mat->rep_robot;
+		}
+		
+
+		strats -> solution_technique -> graph_ros;
+		graph_ros -> cons_etg1_r1 [style=dashed];
+		graph_ros -> cons_etg1_r2 [style=dashed];
+
+	}
+	
     
-    t0 -> prepa_video;
-
-    t0 -> sponsors;
-
-    t0 -> struct_robot;
-    struct_robot -> struct_robot_1;
-    struct_robot -> struct_robot_2;
-
-    struct_robot_1 -> imp_struct;
-    struct_robot_2 -> imp_struct;
-    imp_struct	   -> moteur_roues;
-    moteur_roues   -> arduino_moteur;
-    arduino_moteur -> arduino_rasp;
-
-    imp_struct	   -> cons_etg1_r1;
-    imp_struct	   -> cons_etg1_r2;
-
-    t0    -> cch_sys_rep;
-    cch_sys_rep	   -> cons_sys_rep;
-    cons_sys_rep   -> rep_emetteur;
-    cons_sys_rep   -> rep_recepteur;
- }
+}
