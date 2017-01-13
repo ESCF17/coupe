@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.9)  9 JAN 2017 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.9)  13 JAN 2017 19:08
 entering extended mode
 **./presentation_16_01.tex
 (presentation_16_01.tex
@@ -717,8 +717,8 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks44
 \inpenc@posthook=\toks45
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
-File: latin1.def 2015/03/17 v1.2c Input encoding file
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin9.def"
+File: latin9.def 2015/03/17 v1.2c Input encoding file
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\themes\theme\beamerthemeCa
 mbridgeUS.sty"
@@ -942,12 +942,11 @@ Package pdftex.def Info: img/logo_assos.png used on input line 87.
  <./img/logo_assos.png>] (presentation_16_01.toc) [5
 
 ]
-<img/photo_coupe01.png, id=242, 1461.46pt x 829.0975pt>
-File: img/photo_coupe01.png Graphic file (type png)
-
-<use img/photo_coupe01.png>
-Package pdftex.def Info: img/photo_coupe01.png used on input line 129.
-(pdftex.def)             Requested size: 85.35826pt x 48.41534pt.
+<img/lune_pres.png, id=242, 1084.05pt x 677.53125pt>
+File: img/lune_pres.png Graphic file (type png)
+ <use img/lune_pres.png>
+Package pdftex.def Info: img/lune_pres.png used on input line 129.
+(pdftex.def)             Requested size: 85.35826pt x 53.34552pt.
 LaTeX Font Info:    Try loading font information for U+msa on input line 129.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -991,8 +990,8 @@ Overfull \hbox (8.77843pt too wide) in paragraph at lines 129--129
 
 [6
 
- <./img/photo_coupe01.png> <./img/logo_coupe.jpg> <./img/photo_coupe02.jpg> <./
-img/maps.png>] <img/Table_2017.png, id=274, 963.6pt x 342.5297pt>
+ <./img/lune_pres.png> <./img/logo_coupe.jpg> <./img/photo_coupe02.jpg> <./img/
+maps.png>] <img/Table_2017.png, id=275, 963.6pt x 342.5297pt>
 File: img/Table_2017.png Graphic file (type png)
 
 <use img/Table_2017.png>
@@ -1003,33 +1002,33 @@ Package pdftex.def Info: img/Table_2017.png used on input line 159.
  <./img/Table_2017.png>] (presentation_16_01.toc)
 [8
 
-] <img/archi_1.png, id=340, 579.16376pt x 371.3875pt>
+] <img/archi_1.png, id=341, 579.16376pt x 371.3875pt>
 File: img/archi_1.png Graphic file (type png)
  <use img/archi_1.png>
 Package pdftex.def Info: img/archi_1.png used on input line 196.
 (pdftex.def)             Requested size: 99.58464pt x 63.85472pt.
 
-<img/logo_latex.png, id=341, 472.76625pt x 177.66376pt>
+<img/logo_latex.png, id=342, 472.76625pt x 177.66376pt>
 File: img/logo_latex.png Graphic file (type png)
 
 <use img/logo_latex.png>
 Package pdftex.def Info: img/logo_latex.png used on input line 196.
 (pdftex.def)             Requested size: 85.35826pt x 32.07568pt.
 
-<img/logo_solidworks.jpg, id=342, 336.7782pt x 106.9596pt>
+<img/logo_solidworks.jpg, id=343, 336.7782pt x 106.9596pt>
 File: img/logo_solidworks.jpg Graphic file (type jpg)
 
 <use img/logo_solidworks.jpg>
 Package pdftex.def Info: img/logo_solidworks.jpg used on input line 196.
 (pdftex.def)             Requested size: 113.81102pt x 36.14545pt.
 
-<img/raspberry.jpeg, id=343, 1017.5616pt x 576.7146pt>
+<img/raspberry.jpeg, id=344, 1017.5616pt x 576.7146pt>
 File: img/raspberry.jpeg Graphic file (type jpg)
 
 <use img/raspberry.jpeg>
 Package pdftex.def Info: img/raspberry.jpeg used on input line 196.
 (pdftex.def)             Requested size: 113.81102pt x 64.50359pt.
- <img/logo_github.jpg, id=344, 602.25pt x 200.75pt>
+ <img/logo_github.jpg, id=345, 602.25pt x 200.75pt>
 File: img/logo_github.jpg Graphic file (type jpg)
 
 <use img/logo_github.jpg>
@@ -1042,7 +1041,7 @@ raspberry.jpeg> <./img/logo_github.jpg>]
 (presentation_16_01.toc) [10
 
 ]
-<img/graphviz.PNG, id=410, 1137.65025pt x 414.95026pt>
+<img/graphviz.PNG, id=411, 1137.65025pt x 414.95026pt>
 File: img/graphviz.PNG Graphic file (type png)
  <use img/graphviz.PNG>
 Package pdftex.def Info: img/graphviz.PNG used on input line 214.
@@ -1053,14 +1052,14 @@ Package pdftex.def Info: img/graphviz.PNG used on input line 214.
  <./img/graphviz.PNG>] (presentation_16_01.toc) [12
 
 ]
-<img/table_maison.jpg, id=475, 5331.92pt x 2999.205pt>
+<img/table_maison.jpg, id=476, 5331.92pt x 2999.205pt>
 File: img/table_maison.jpg Graphic file (type jpg)
 
 <use img/table_maison.jpg>
 Package pdftex.def Info: img/table_maison.jpg used on input line 248.
 (pdftex.def)             Requested size: 202.25708pt x 113.81102pt.
 
-<img/systeme_reperage.PNG, id=476, 289.68225pt x 307.1475pt>
+<img/systeme_reperage.PNG, id=477, 289.68225pt x 307.1475pt>
 File: img/systeme_reperage.PNG Graphic file (type png)
 
 <use img/systeme_reperage.PNG>
@@ -1104,7 +1103,7 @@ Package rerunfilecheck Warning: File `presentation_16_01.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `presentation_16_01.out':
-(rerunfilecheck)             Before: 27ECD9F666DACC636FA23F5094A3F6E3;638
+(rerunfilecheck)             Before: 42E5BF51F34979AE252B236E8397971B;657
 (rerunfilecheck)             After:  657DDE3776A4667D889A5562CCE02A9E;638.
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1112,10 +1111,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 18584 strings out of 493334
- 350752 string characters out of 3136676
- 428238 words of memory out of 3000000
- 21615 multiletter control sequences out of 15000+200000
+ 18581 strings out of 493334
+ 350675 string characters out of 3136676
+ 428200 words of memory out of 3000000
+ 21612 multiletter control sequences out of 15000+200000
  13631 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,65p,786b,848s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1124,9 +1123,9 @@ css0600.pk> <C:\Users\Hugo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
 \dpi600\ecss0800.pk> <C:\Users\Hugo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
 nappen\ec\dpi600\ecss1095.pk> <C:\Users\Hugo\AppData\Local\MiKTeX\2.9\fonts\pk\
 ljfour\jknappen\ec\dpi600\ecss1440.pk>
-Output written on presentation_16_01.pdf (15 pages, 9826454 bytes).
+Output written on presentation_16_01.pdf (15 pages, 10573980 bytes).
 PDF statistics:
- 756 PDF objects out of 1000 (max. 8388607)
+ 758 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)
  246 words of extra memory for PDF output out of 10000 (max. 10000000)
 
