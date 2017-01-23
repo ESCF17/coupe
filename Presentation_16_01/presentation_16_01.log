@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.9)  13 JAN 2017 19:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.1.9)  15 JAN 2017 22:11
 entering extended mode
 **./presentation_16_01.tex
 (presentation_16_01.tex
@@ -1079,7 +1079,13 @@ Overfull \vbox (3.15988pt too high) detected at line 248
  <./img/table_maison.jpg> <./img/systeme_reperage.PNG>]
 (presentation_16_01.toc) [14
 
-] [15
+]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 269.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [15
 
 ]
 \tf@nav=\write6
@@ -1091,11 +1097,12 @@ Overfull \vbox (3.15988pt too high) detected at line 248
 \tf@snm=\write8
 \openout8 = `presentation_16_01.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
- (presentation_16_01.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 272.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 272.
+
+(presentation_16_01.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 272.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 272.
 
 
 Package rerunfilecheck Warning: File `presentation_16_01.out' has changed.
@@ -1103,29 +1110,30 @@ Package rerunfilecheck Warning: File `presentation_16_01.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `presentation_16_01.out':
-(rerunfilecheck)             Before: 42E5BF51F34979AE252B236E8397971B;657
-(rerunfilecheck)             After:  657DDE3776A4667D889A5562CCE02A9E;638.
+(rerunfilecheck)             Before: 657DDE3776A4667D889A5562CCE02A9E;638
+(rerunfilecheck)             After:  22C9C79505EBA088E87B25447A4E7C96;639.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 18581 strings out of 493334
- 350675 string characters out of 3136676
- 428200 words of memory out of 3000000
- 21612 multiletter control sequences out of 15000+200000
- 13631 words of font info for 41 fonts, out of 3000000 for 9000
+ 18606 strings out of 493334
+ 351494 string characters out of 3136676
+ 429200 words of memory out of 3000000
+ 21633 multiletter control sequences out of 15000+200000
+ 13945 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,65p,786b,848s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Hugo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-css0600.pk> <C:\Users\Hugo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecss0800.pk> <C:\Users\Hugo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecss1095.pk> <C:\Users\Hugo\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecss1440.pk>
-Output written on presentation_16_01.pdf (15 pages, 10573980 bytes).
+ctt1095.pk> <C:\Users\Hugo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecss0600.pk> <C:\Users\Hugo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ecss0800.pk> <C:\Users\Hugo\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecss1095.pk> <C:\Users\Hugo\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecss1440.pk>
+Output written on presentation_16_01.pdf (15 pages, 10583216 bytes).
 PDF statistics:
- 758 PDF objects out of 1000 (max. 8388607)
+ 789 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)
  246 words of extra memory for PDF output out of 10000 (max. 10000000)
 

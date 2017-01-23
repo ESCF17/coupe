@@ -5,7 +5,7 @@
 \beamer@sectionintoc {2}{Coupe de France Robotique}{5}{0}{2}
 \beamer@subsectionintoc {2}{1}{Le d\'eroulement}{6}{0}{2}
 \beamer@subsectionintoc {2}{2}{Les \'epreuves}{7}{0}{2}
-\beamer@sectionintoc {3}{Ing\'enieur de demain... D\'ej\`a les outils en main !}{8}{0}{3}
+\beamer@sectionintoc {3}{Ing\'enieurs de demain... D\'ej\`a les outils en main !}{8}{0}{3}
 \beamer@sectionintoc {4}{R\'epartitions des t\^aches}{10}{0}{4}
 \beamer@sectionintoc {5}{Avancement du projet}{12}{0}{5}
 \beamer@sectionintoc {6}{Questions}{14}{0}{6}
