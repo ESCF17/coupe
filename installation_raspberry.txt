@@ -1,0 +1,20 @@
+#### Installation Raspberry - ROS ####
+
+Copier l'img sur une carte micro sd : passer par la console :
+			-> Identifier le socket pris par la micro SD 
+			-> Formater la micro SD en du FAT 
+			-> démonter la carte $ diskutil unmountDisk /dev/disk2 (si le socket est 'disk2')
+			-> Copier l'img $ sudo dd bs=4m if=NOM_DE_L_IMAGE.img of=/dev/disk2 (si le socket est 'disk2')
+
+
+Installer ROS : http://wiki.ros.org/kinetic/Installation/Ubuntu
+			-> Créer le working space
+			-> Créer les pkg 
+			-> Installer Rosserial-Arduino (Faire attention à l'URL proposer sur le site ROS : rempalcer 'indigo' par la distribution 'kintetic')
+
+Coté linux :
+			-> installer sqlite3
+			-> installer screen
+
+scp : (pour copier en ssh les fichiers)
+			-> Copier les scripts python (.py) + base de donnée sqlite lite (.db) 
