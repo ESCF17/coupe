@@ -1,6 +1,8 @@
 //#include <ros.h>
 //#include <std_msgs/String.h>
 
+//MONTAGE AVEC RESISTANCE DE 10 KOHM
+
 const int GO = 2;
 
 int valeurLue = 0;
