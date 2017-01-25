@@ -1,8 +1,7 @@
 //#include <ros.h>
 //#include <std_msgs/String.h>
 
-const int entrer = 2;
-const int GO = 1 ;
+const int GO = 2;
 
 int valeurLue = 0;
 
@@ -11,21 +10,21 @@ void setup() {
 }
 
 int maFonction(){
-  digitalWrite(entrer,HIGH);
-  valeurLue = analogRead(GO);
+  valeurLue = digitalRead(GO);
   Serial.println(valeurLue);
-  if(valeurLue < 1000){
+  if(valeurLue == LOW){
     Serial.println("arret");
     return 0;
   } 
-  else{
+  else if(valeurLue == HIGH){
+    Serial.println("marche");
     return 1;
   }
 }
 
 void loop() {
   int MaValeur = maFonction();
-  if(MaValeur == 0){
+  if(MaValeur == 1){
     //p.publish(MaValeur);
     Serial.println("Valeur publie");
   }
