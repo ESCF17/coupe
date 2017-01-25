@@ -10,6 +10,12 @@ int ECHOCAPTEURSUD=10;
 float DISTANCE_SUD=0;
 float LECTURE_ECHO_SUD=0;
 
+//CAPTEUR OUEST
+int TRIGGERCAPTEUROUEST=5;
+int ECHOCAPTEUROUEST=6;
+float DISTANCE_OUEST=0;
+float LECTURE_ECHO_OUEST=0;
+
 void setup() {
   //CAPTEUR NORD
   pinMode(TRIGGERCAPTEURNORD,OUTPUT);
@@ -18,6 +24,10 @@ void setup() {
   //CAPTEUR SUD
   pinMode(TRIGGERCAPTEURSUD,OUTPUT);
   pinMode(ECHOCAPTEURSUD,INPUT);
+
+  //CAPTEUR OUEST
+  pinMode(TRIGGERCAPTEUROUEST,OUTPUT);
+  pinMode(ECHOCAPTEUROUEST,INPUT);
   
   Serial.begin(9600);
 
@@ -53,11 +63,24 @@ float CAPTEURSUD()
   //Serial.println("");
   return DISTANCE_SUD;
 }
+float CAPTEUROUEST()
+{
+  digitalWrite(TRIGGERCAPTEUROUEST,HIGH);
+  delay(10);
+  digitalWrite(TRIGGERCAPTEUROUEST,LOW);
+  LECTURE_ECHO_OUEST=pulseIn(ECHOCAPTEUROUEST,HIGH);
+  DISTANCE_OUEST= LECTURE_ECHO_OUEST/58;
+  DISTANCE_OUEST = DISTANCE_OUEST*10;
+  //Serial.print("Distance OUEST : " + (String)DISTANCE_OUEST);
+  //Serial.println("");
+  return DISTANCE_OUEST;
+}
 void CAPTEUR_POUR_ROS()
 {
   float nord = CAPTEURNORD();
   float sud = CAPTEURSUD();
-  Serial.print("N" + (String)nord + "S"+ (String)sud);
+  float ouest = CAPTEUROUEST();
+  Serial.print("N" + (String)nord + "S"+ (String)sud + "W"+ (String)ouest);
   Serial.println("");
 }
 
