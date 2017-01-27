@@ -11,7 +11,7 @@ void setup() {
   Serial.begin(9600);
 }
 
-int maFonction(){
+int maFonction(){ //Cette fonction renvoie si le fils est encore sur le montage ou pas
   valeurLue = digitalRead(GO);
   Serial.println(valeurLue);
   if(valeurLue == LOW){
@@ -26,7 +26,7 @@ int maFonction(){
 
 void loop() {
   int MaValeur = maFonction();
-  if(MaValeur == 1){
+  if(MaValeur == 1){ //Si le fils n'est plus sur le montage il renvoie "marche", ce qui veut dire que le robot doit commencer
     //p.publish(MaValeur);
     Serial.println("Valeur publie");
   }
