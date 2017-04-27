@@ -1,0 +1,24 @@
+Spécificités techniques:
+
+- La modulation : Elle est importante, c'est ça qui permet d'envoyer le signal
+plus loin, sinon ça dépasse pas 10 cm
+
+- Le passe-bande : il sert à isoler la fréquence de la balise à laquel il 
+correpond. Il y a d'autres sytèmes pour ça mais il a aussi l'avantage de 
+supprimer beaucoups de bruits parasites en même temps.
+
+- Chaque passe-bande est collé à une pin de la raspberry, de plus le lisseur 
+de crête en haut permet d'envoyer un signal continue quand il a la bonne 
+fréquence. Ainsi la raspberry n'a que des 1 et 0 à gérer.
+
+- Un dernier truc sur la modulation : La fréquence du signal porteur ne doit pas  dépasser les 1/10 du signal de modulation, sinon le récepteur/démodulateur de l'autre côté ne le comprendra pas.
+
+Histoire du passe bande :
+
+Il m'a couté entre 7h et 12h de travails par semaines ( sauf vacances ou j'avoisinais les 35). Je faisais un compte-rendu sur la majorité des séances.
+Avant d'arriver au système actuel nous avons chnagé souvent d'idées, nous étions partis au départ sur quelque chose de plus gros qui s'est préciser au fur et a mesure du temps.
+Faut savoir qu'à la base on était même pas sur que notre système pouvais fonctionner, on est pas parti sur l'idée de faire un truc dont on était sur de l'éfficacité, au commencement c'était juste une théorie.
+On a eu beaucoup de mal avec car à la base on avait aucune connaissances sur le sujet, il a fallut quasiment tous apprendre de 0. Un grand merci à Walter Peretti et Olivier Zannette qui nous ont été d'un grand secour.
+On a du faire beaucoup d'empirique et apprendre des trucs sur le tas (moi j'ai appris que des résistances en séries se cumulent mais pas des condensateurs, eux ils se divisent). A force de manipuler les résistances j'ai même fini par apprendre le code couleur par coeur.
+
+En résumer c'était plutôt compliqué, on est tombé pas mal de fois dans des impassent mais au final je pense que c'est le truc qui m'a appris le plus de choses de toute l'année, je regrette pas.
