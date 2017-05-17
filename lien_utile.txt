@@ -1,4 +1,4 @@
-Vous trouverez ci-joints l'ensembles des liens utiles dans ce projet : 
+﻿Vous trouverez ci-joints l'ensembles des liens utiles dans ce projet : 
 
 -- Linux :
 http://linux.developpez.com/tutoriels/debuter-installation/guide-linux-distribution/
@@ -15,7 +15,7 @@ https://openclassrooms.com/courses/gerez-vos-codes-source-avec-git (tuto console
 
 -- Latex : 
 https://openclassrooms.com/courses/redigez-des-documents-de-qualite-avec-latex (tuto)
-
+ 
 -- SQL : 
 (My) https://openclassrooms.com/courses/administrez-vos-bases-de-donnees-avec-mysql
 (My) http://sql.developpez.com/#commencer-sql
